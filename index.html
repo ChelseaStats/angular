@@ -17,19 +17,25 @@
       document.createElement('ng-pluralize');
     </script>
   <![endif]-->
+  <style>
+    body { font-family: monaco, consolas; font-size: 1em;}
+    .wraooer { width:980px margin: auto auto;
+  </style>
   </head>
   <body  ng-controller="AppController">
     <div class="wrapper">
             <div ng-app>  
                 <h2>{{"AnguLAR JS Example".toUpperCase()}}</h2>  
-            </div> 
+            
+            
             <div ng-init="myFavoriteWebsites=['http://www.thechels.co.uk','http://thechels.uk','http://thecellarroom.uk']">  
-        My First fav website is : {{myFavoriteWebsites[0]}}  
-        <br />  
-        My Second fav website is : {{myFavoriteWebsites[1]}}  
-        <br />  
-        My Third fav website is : {{myFavoriteWebsites[2]}}  
-    </div>
-    </div>
+              My First fav website is : {{myFavoriteWebsites[0]}}  
+              <br />  
+              My Second fav website is : {{myFavoriteWebsites[1]}}  
+              <br />  
+              My Third fav website is : {{myFavoriteWebsites[2]}}  
+          </div>
+      </div>
+    </div> 
   </body>
 </html>
