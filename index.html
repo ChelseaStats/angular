@@ -28,13 +28,14 @@
                 <h2>{{"AnguLAR JS Example".toUpperCase()}}</h2>  
             
             
-            <div ng-init="myFavoriteWebsites=['http://www.thechels.co.uk','http://thechels.uk','http://thecellarroom.uk']">  
-              My First fav website is : {{myFavoriteWebsites[0]}}  
-              <br />  
-              My Second fav website is : {{myFavoriteWebsites[1]}}  
-              <br />  
-              My Third fav website is : {{myFavoriteWebsites[2]}}  
-          </div>
+<div ng-init="myFavoriteWebsites=['http://www.c-sharpcorner.com/','http://www.codeproject.com/','http://sibeeshpassion.com/']">  
+        <ul>  
+            My favorite websites are:  
+            <li ng-repeat="n in myFavoriteWebsites">  
+                {{n}}  
+            </li>  
+        </ul>  
+    </div>  
       </div>
     </div> 
   </body>
