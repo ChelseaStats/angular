@@ -1,0 +1,23 @@
+<div>
+    <h3>Name: {{user.name}}</h3>
+    <p>{{error}}</p>
+</div>
+<h4>Repos:</h4>
+<table class="tablesorter" style="width:100%;">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Stars</th>
+            <th>Language</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="repo in repos | orderBy:repoSortOrder">
+            <td>{{repo.name}}</td>
+            <td>{{repo.stargazers_count |number}}</td>
+            <td>{{repo.language}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<p><a href="#/main">Back To Search</a></p>
